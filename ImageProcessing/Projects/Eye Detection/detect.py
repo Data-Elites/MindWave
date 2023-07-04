@@ -1,5 +1,5 @@
 import cv2
-
+#This project uses opencv to detect eyes.
 video_formats = ['mp4', 'mov', 'wmv', 'avi', 'flv', 'f4v', 'swf', 'mkv']
 image_formats = ['jpg', 'png']
 eye_cascade = cv2.CascadeClassifier('haarcascade_eye_tree_eyeglasses.xml')
@@ -7,7 +7,7 @@ print("Eye Detection with OpenCV\n")
 print("Enter the corresponding number you want to work with: \n 1. Image \n 2. Video")
 format = int(input())
 
-if format == 1:
+if format == 1: #checking the format
     path = input("Please give the exact file path to your image: ")
     extension = path[len(path)-3:]
     print(extension)
